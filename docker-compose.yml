@@ -1,6 +1,7 @@
 #First, create a folder - mkdir ~/docker-prometheus
 #Secondly, create a file - docker-compose.yml inside it with the following contents
 #Lastly, you also need to copy prometheus.yml file inside the same directory
+# All file can be found on https://prometheus.io/docs/guides/cadvisor/
 
 version: '3.2'
 services:
