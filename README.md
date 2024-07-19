@@ -21,3 +21,11 @@ docker run -d -p 3000:3000 --name=grafana grafana/grafana-enterprise
 eg. http://localhost:3000
 
 # Prometheus data source, you can configure with that of your Grafana
+
+# Exploring metrics in the expression browser
+
+Bytes received over the network by the container per second in the last minute	(All containers)
+e.g. rate(container_network_receive_bytes_total[1m])
+
+The cgroup's CPU usage in the last minute	(The redis container)
+e.g. rate(container_cpu_usage_seconds_total{name="redis"}[1m])
